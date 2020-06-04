@@ -68,11 +68,11 @@ applications within the same workspace, or exported to an NPM Package for use in
 
 **Build and Publish library (no schematics)**: 
 
-`npm run build:lib && `
+`npm run build:lib && ` *build the library*
 
-`npm run pack:lib && `
+`npm run pack:lib && ` *pack the library into a .tgz file*
 
-`npm run publish:lib`
+`npm run publish:lib` *publish the library to an npm repository*
 
 **Build and Publish library (with schematics)**: 
 
@@ -86,18 +86,18 @@ applications within the same workspace, or exported to an NPM Package for use in
 
 `npm run copy:collection && ` *copy the collection to the library (in preparation for packaging)*
 
-`npm run pack:lib && ` *pack the library into a *.tgz file*
+`npm run pack:lib && ` *pack the library into a .tgz file*
 
-`npm run publish:lib` *publish the library to an npm repository
+`npm run publish:lib` *publish the library to an npm repository*
 
 
 NOTE: The following scripts are just helpers, not required.
 
-`watch:lib` will rebuild the library on saving changes; 
+`watch:lib` *will rebuild the library on saving changes*
 
-`postbuild` will do the three copy commands for schemas
+`postbuild` *will do the three copy commands for schemas*
 
-`build:nopub` will do all of the steps except for publish to an npm repository
+`build:nopub` *will do all of the steps except for publish to an npm repository*
 
 
 ## Private NPM Repository - Verdaccio
@@ -142,3 +142,10 @@ Resources that may assist you...
 
 - [Verdaccio (official)](https://verdaccio.org) | [github](https://github.com/verdaccio/verdaccio) | [npm](https://npmjs.com/package/verdaccio)
 - [Verdaccio - SitePoint walkthrough](https://sitepoint.com/private-npm-packages-verdaccio)
+
+
+Additional sources for inspiration... (include attribution, as applicable)
+- [@angular/cli - schematics](https://github.com/angular/angular-cli/tree/master/packages/schematics)
+- [@angular/cli - devkit/schematics](https://github.com/angular/angular-cli/tree/master/packages/angular_devkit/schematics)
+- [@angular/components (Material Design) - schematics](https://github.com/angular/components/tree/master/src/cdk/schematics)
+
