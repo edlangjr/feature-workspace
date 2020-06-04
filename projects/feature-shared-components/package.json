@@ -1,0 +1,13 @@
+{
+  "name": "feature-shared-components",
+  "version": "1.0.0",
+  "description": "Primary feature shared components",
+  "author": "Ed Lang",
+  "license": "MIT",
+  "schematics": "./schematics/collection.json",
+  "peerDependencies": {
+    "@angular/common": "^9.1.6",
+    "@angular/core": "^9.1.6",
+    "tslib": "^1.10.0"
+  }
+}
