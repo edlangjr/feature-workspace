@@ -72,6 +72,10 @@ applications within the same workspace, or exported to an NPM Package for use in
 
 `npm run pack:lib && ` *pack the library into a .tgz file*
 
+`npm run create:pack:dir && ` *if it does not exist, create a pack directory*
+
+`npm run move:pack && ` *move the .tgz file into the pack directory*
+
 `npm run publish:lib` *publish the library to an npm repository*
 
 **Build and Publish library (with schematics)**: 
@@ -88,6 +92,10 @@ applications within the same workspace, or exported to an NPM Package for use in
 
 `npm run pack:lib && ` *pack the library into a .tgz file*
 
+`npm run create:pack:dir && ` *if it does not exist, create a pack directory*
+
+`npm run move:pack && ` *move the .tgz file into the pack directory*
+
 `npm run publish:lib` *publish the library to an npm repository*
 
 
@@ -95,7 +103,7 @@ NOTE: The following scripts are just helpers, not required.
 
 `watch:lib` *will rebuild the library on saving changes*
 
-`postbuild` *will do the three copy commands for schemas*
+`schemas:postbuild` *will do the three copy commands for schemas*
 
 `build:nopub` *will do all of the steps except for publish to an npm repository*
 

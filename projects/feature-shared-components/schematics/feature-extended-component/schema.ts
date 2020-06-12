@@ -1,10 +1,8 @@
 export interface Schema {
-  // The name of the service.
+  // The name of the component.
   name: string;
-
-  // The path to create the service.
-  path?: string;
-
   // The name of the project.
   project?: string;
+  // The path to create component
+  path?: string;
 }

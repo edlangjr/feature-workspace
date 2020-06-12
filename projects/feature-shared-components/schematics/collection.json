@@ -1,14 +1,21 @@
 {
-    "$schema": "../../../node_modules/@angular-devkit/schematics/collection-schema.json",
-    "schematics": {
-      "ng-add": {
-        "description": "Add my library to the project.",
-        "factory": "./ng-add/index#ngAdd"
-      },
-      "feature-starter-service": {
-        "description": "Generate a service in the project.",
-        "factory": "./feature-starter-service/index#featureStarterService",
-        "schema": "./feature-starter-service/schema.json"
-      }
+  "$schema": "../../../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "ng-add": {
+      "description": "Add my library to the project.",
+      "factory": "./ng-add/index#ngAdd"
+    },
+    "feature-extended-component": {
+      "aliases": [ "sc" ],
+      "description": "Generate and extend a component in the project.",
+      "factory": "./feature-extended-component/index#featureExtendedComponent",
+      "schema": "./feature-extended-component/schema.json"
+    },
+    "feature-starter-service": {
+      "aliases": [ "ss" ],
+      "description": "Generate a service in the project.",
+      "factory": "./feature-starter-service/index#featureStarterService",
+      "schema": "./feature-starter-service/schema.json"
     }
   }
+}

@@ -1,4 +1,4 @@
-import { Rule, SchematicContext, Tree, forEach, FileEntry, apply, url, chain, mergeWith  } from '@angular-devkit/schematics';
+import { Rule, SchematicContext, Tree, forEach, FileEntry, apply, url, chain, mergeWith } from '@angular-devkit/schematics';
 //         move, Source, template, branchAndMerge, MergeStrategy
 // import { strings } from '@angular-devkit/core';
 import { NodePackageInstallTask } from '@angular-devkit/schematics/tasks';
@@ -63,4 +63,4 @@ function updatePackageJson(): Rule {
 
     return tree;
   };
- }
+}
