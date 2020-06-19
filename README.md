@@ -18,7 +18,7 @@ this before placing any demonstration web site on Github Pages - you may expose 
 ## Terminology
 
 **Feature** - A specific domain of functionality.  This could be a Blog, a shopping cart, or an image 
-catalog, to naame a few possibilities
+catalog, to name a few possibilities
 
 **Micro Front-End** - A web site dedicated to executing a specific feature and only that, passing control
 to another Micro Front-End in order to perform a different domain of functionality.
