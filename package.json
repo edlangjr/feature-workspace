@@ -12,6 +12,8 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "build:lib": "ng-packagr -p ./projects/feature-shared-components/ng-package.json",
+    "create:sass:folders": "cd ./dist/feature-shared-components/src/lib && mkdir sass && cd ../../../..",
+    "copy:sass": "cp ./projects/feature-shared-components/src/lib/sass/variables.scss ./dist/feature-shared-components/src/lib/sass/variables.scss" ,
     "build:schemas": "./node_modules/.bin/tsc -p ./projects/feature-shared-components/tsconfig.schematics.json",
     "watch:schemas": "./node_modules/.bin/tsc -p ./projects/feature-shared-components/tsconfig.schematics.json --watch",
     "copy:schemas": "cd ./projects/feature-shared-components || cp --parents schematics/*/schema.json ../../dist/feature-shared-components/ && cd ../..",
@@ -23,7 +25,7 @@
     "move:pack": "mv ./*.tgz ./pack/",
     "pack:doit": "npm run pack:lib && npm run create:pack:dir && npm run move:pack",
     "publish:lib": "npm publish --registry http://localhost:4873 ./pack/feature-shared-components-1.0.0.tgz",
-    "build:nopub": "npm run build:lib && npm run build:schemas && npm run schemas:postbuild && npm run pack:doit",
+    "build:nopub": "npm run build:lib && npm run create:sass:folders && npm run copy:sass && npm run build:schemas && npm run schemas:postbuild && npm run pack:doit",
     "analyze": "ng build feature-micro-front-end --prod --statsJson=true && webpack-bundle-analyzer ./dist/feature-micro-front-end/stats-es2015.json"
   },
   "private": true,
